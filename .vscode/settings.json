@@ -1,6 +1,9 @@
 {
     "files.associations": {
         "*.tcc": "cpp",
-        "fstream": "cpp"
-    }
+        "fstream": "cpp",
+        "iostream": "cpp",
+        "iosfwd": "cpp"
+    },
+    "c-cpp-compile-run.should-show-notifications": false
 }
