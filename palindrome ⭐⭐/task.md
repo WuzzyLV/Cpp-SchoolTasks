@@ -23,16 +23,17 @@ Teksta faila irpalin.rez vienīgajā rindā jāizvada vārds "IR", ja ievadītā
     NAV
 
 # Result
-    8/10
-    | Tests  |  Rezultāts   |
-    | ------ | ------------ |
-    |    1   |	Pareizs     |
-    |    2   |	Pareizs     |
-    |    3   |	Pareizs     |
-    |    4   |	Nepareizs   |
-    |    5	 |  Pareizs     |
-    |    6	 |  Pareizs     |
-    |    7	 |  Nepareizs   |
-    |    8 	 |  Pareizs     |
-    |    9 	 |  Pareizs     |
-    |    10	 |  Pareizs     |
+> Score: 8/10
+
+| Tests  |  Rezultāts   |
+| ------ | ------------ |
+|    1   |	Pareizs     |
+|    2   |	Pareizs     |
+|    3   |	Pareizs     |
+|    4   |	Nepareizs   |
+|    5	 |  Pareizs     |
+|    6	 |  Pareizs     |
+|    7	 |  Nepareizs   |
+|    8 	 |  Pareizs     |
+|    9 	 |  Pareizs     |
+|    10	 |  Pareizs     |
