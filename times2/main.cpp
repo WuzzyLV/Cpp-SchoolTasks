@@ -7,7 +7,6 @@ int main() {
   cout << "Bing bong starting..." << endl;
   ifstream inputFile("reiz.in");
   
-
   if(!inputFile.good()){
     ofstream inputFile("reiz.in");
     cout << "File doesnt exist making, please input a value!" << endl;
