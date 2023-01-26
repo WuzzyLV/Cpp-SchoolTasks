@@ -26,7 +26,7 @@ int main() {
     while (inputFile){
         string curr;
         inputFile>> curr;
-        in+=(curr+" ");
+        in+=(curr);
     }
     //sets the string to the defined size
     in=in.substr(0,l);
@@ -35,8 +35,7 @@ int main() {
         if(in[i]<=92 && in[i]>=65){
             in[i]+=32;
         }
-        if(in[i]==' ' ||
-        in[i] =='-' ||
+        if(in[i] =='-' ||
         in[i]==',' ||
         in[i]=='!' ||
         in[i]=='?' ){
