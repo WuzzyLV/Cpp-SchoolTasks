@@ -29,4 +29,4 @@ writeln(counter);
 
 # Resultats
     ram     Statuss     Vertejums
-	23.5	Pabeigts	6 / 12
+	23.5	Pabeigts	9 / 12

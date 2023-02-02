@@ -9,7 +9,7 @@ int main(){
     cin >> N;
     //logic
     int counter =0;
-    for(int i=(N-1); i>=1; i--){
+    for(int i=(N-1); i>=1 ; i--){
         counter++;
         if((N%i) ==0){  break;   }
     }
