@@ -16,25 +16,24 @@ using namespace std;
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        ListNode* start=head;
-        ListNode* temp=start->next;
+        ListNode* temp=head->next;
         int len=1;
         while(temp!=NULL){
             temp=temp->next;
             len++;
         }
-        int startI=len/2;
+        int start=len/2;
         int endI= len+2;
-        temp=start;
+        temp=head;
         for(int i =0;i<len;i++){
-            if(i==startI){
-                start=temp;
+            if(i==start){
+                head=temp;
             }else if(i==endI){
                 temp->next=NULL;
             }
             temp=temp->next;
         }
-        return start;
+        return head;
     }
 };
 
