@@ -6,9 +6,6 @@ using namespace std;
 class Solution {
 public:
     vector<double> convertTemperature(double celsius) {
-        vector<double> result;
-        result.push_back(celsius*1.8+32);
-        result.push_back(celsius+273.15);
-        return result;
+        return {celsius + 273.15, celsius * 1.80 + 32};
     }
 };
