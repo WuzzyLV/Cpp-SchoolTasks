@@ -1,4 +1,4 @@
-# Problem
+# [Problem](https://www.codechef.com/problems/SNAPCHAT)
 The most popular feature on snapchat is Snapchat Streak.
 A streak is maintained between two people if both of them send at least one snap to each other daily.
 If, on any day, either person forgets to send at least one snap, the streak breaks and the streak count is set to 0.

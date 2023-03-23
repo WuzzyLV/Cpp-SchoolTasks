@@ -1,5 +1,5 @@
 
-# Problēma
+# [Problēma](https://www.codechef.com/problems/SNAPCHAT)
 Populārākā snapchat funkcija ir Snapchat Streak.
 Sērija tiek saglabāta starp diviem cilvēkiem, ja abi nosūta viens otram vismaz vienu snap katru dienu.
 Ja kādā dienā kāds aizmirst nosūtīt vismaz vienu snap, sērija pārtrūkst un sēriju skaits tiek iestatīts uz 0.
