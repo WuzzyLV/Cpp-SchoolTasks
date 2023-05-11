@@ -37,3 +37,27 @@ $0 $ <= $ K $ <= $ 1 $
 ### 2. testa gadījums: sākotnēji deglis ir ieslēgtā stāvoklī. Pēc 0 izmaiņām deglis paliek ieslēgtā stāvoklī.
 
 ### 3. pārbaudes gadījums: sākotnēji deglis ir ieslēgtā stāvoklī. Tas var atbilst jebkuram no pirmajiem 3 līmeņiem. Tādējādi mēs nevaram noteikt galīgo līmeni pēc 3 izmaiņām. Tādējādi galīgais stāvoklis ir neskaidrs.
+
+## Kods
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int dataCount, turns;
+    bool on=false;
+    cin >> dataCount;
+
+    for(int i =0; i<dataCount; i++){
+        cin >> turns >> on;
+        
+        if(turns%4==0){
+            cout<< ((on) ? "On" : "Off") <<endl; 
+            continue;
+        }
+        cout<< ((on) ? "Ambiguous" : "On") <<endl; 
+    }
+	return 0;
+}
+
+```

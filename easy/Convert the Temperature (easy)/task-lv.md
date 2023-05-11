@@ -29,3 +29,18 @@ Paskaidrojums: Temperatūra pie 122,11 Celsija skalas, pārrēķinot Kelvinos, i
 - pārspēj 100%
 - Atmiņa 6 MB
 - pārspēj 91,7%
+
+## Kods
+```cpp
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<double> convertTemperature(double celsius) {
+        return {celsius + 273.15, celsius * 1.80 + 32};
+    }
+};
+```

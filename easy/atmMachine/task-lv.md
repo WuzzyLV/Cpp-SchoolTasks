@@ -32,3 +32,32 @@ Katram pārbaudes gadījumam izdrukājiet vienu rindiņu, kurā ir virkne ar gar
 1. gadījuma piemērs: bankomātā sākotnēji ir 10 naudas vienības. Pirmais atnāk un izņem 3 vienības, tātad automātā paliek 7. Tad otrais izņem 5 vienības un atlikusī summa ir 2. Trešā grib izņemt 3 vienības, bet tā kā ir tikai 2 vienības naudu automātā, tas iemet kļūdu un trešajam jāiziet neko nesaņemot. Tad ceturtais izņem 2 vienības, kas automātā neko neatstāj, tātad pēdējam neko nesaņem.
 
 2. gadījuma piemērs: bankomātā sākotnēji ir 6 naudas vienības, tāpēc tas neko nevar dot pirmajai un otrajai personai. Kad atnāk trešais, tas iedod visu naudu, kas tam ir, tāpēc arī pēdējais neko nesaņem.
+
+## Kods
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	int dataCount,pplCount,money,withdrawAmount;
+	cin >> dataCount;
+	
+	for(int i =0; i<dataCount; i++){
+	    cin >> pplCount >> money;
+	    for(int j =0; j<pplCount; j++){
+	       cin>>withdrawAmount;
+	       
+	       if(withdrawAmount>money){
+	           cout<<0;
+	           continue;
+	       }
+	       cout<<1;
+	       money-=withdrawAmount;
+	   }
+	    cout<<endl;
+	}
+	
+	return 0;
+}
+
+```
