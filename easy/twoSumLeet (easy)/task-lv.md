@@ -37,9 +37,10 @@ Jūs varat atgriezt atbildi jebkurā secībā.
     Beats:
     17,13%
     
-    ## Kods 
-    ```cpp
-    #include <vector>
+ ## Kods 
+```cpp
+
+#include <vector>
 #include <iostream>
 #include <map>
 
@@ -60,33 +61,4 @@ public:
     }
 };
 
-//////////// manual testing //////////
 
-int print2DVec(vector<vector<int>> vec){
-    for(vector<int> i : vec){
-        for(int val : i){
-            cout<< val << " ";
-        }
-        cout <<endl;
-    }
-    cout <<endl;
-}
-int printVec(vector<int> vec){
-    for(int i : vec){
-        cout<< i << " ";
-    }
-    cout <<endl;
-}
-
-int main(int argc, char const *argv[]){
-    Solution sol;
-    /// ///// //// ////
-
-    vector<int> vec = {3,2,4};
-    cout << printVec(sol.twoSum(vec, 6)) << endl;
-
-    return 0;
-}
-
-/////////////////////////////////////
-    ```
