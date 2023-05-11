@@ -30,7 +30,7 @@ writeln(counter);
 # Resultats
     ram     Statuss     Vertejums
 	23.5	Pabeigts	9 / 12
-## Kods 
+## Kods
 ```cpp
 #include <iostream>
 
