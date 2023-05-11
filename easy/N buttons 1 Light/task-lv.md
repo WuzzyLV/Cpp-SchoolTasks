@@ -34,3 +34,33 @@ Ievade|Izvade
 ## Paskaidrojums:
 - 1. pārbaudes gadījums: visas pogas sākotnēji ir izslēgtas, un beidzot ir mainījies tikai vienas pogas stāvoklis, tāpēc spuldzes stāvoklis tiek mainīts, t.i., tā izslēdzas.
 - 2. pārbaudes gadījums: visas pogas sākotnēji ir izslēgtas, un beidzot ir mainījušies divu pogu stāvokļi, tāpēc spuldzes stāvoklis mainās divreiz, t.i., tā paliek ieslēgta.
+
+## Kods
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	int runAmount, n;
+	bool light;
+	string before,after;
+	cin>>runAmount;
+
+	while(runAmount--){
+		light=true;
+		cin>>n>>before>>after;
+		for(int i=0; i<n; i++){
+			if(before[i]!=after[i]){
+				light=!light;
+			}
+		}
+		if(light){
+			cout<<"1"<<endl;
+		}else{
+			cout<<"0"<<endl;
+		}
+	}
+	return 0;
+}
+
+```

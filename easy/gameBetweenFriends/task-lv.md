@@ -37,3 +37,34 @@ Ievade |Izvade
     - Sākotnēji Nitinam ir 3 monētas un Sobhagyai ir 3 monētas, tāpēc Nitin uzvar.
     - Pēc tam Ritiks atdod savas 3 monētas Sobhagyai. Tagad Nitinam ir 3 monētas un Sobhagyai ir 6 monētas, tāpēc Sobhagya uzvar.
     - Tad Satjarts atdod savas 3 monētas Nitinam. Visbeidzot Nitinam ir 6 monētas un Sobhagyai ir 6 monētas, tāpēc Nitin ir galīgais uzvarētājs
+
+## Kods
+```cpp
+#include <iostream>
+using namespace std;
+
+int giveToLoser(int a, int b, int x){
+    if(a<b){
+        a+=x;
+    }else{
+        b+=x;
+    }
+}
+
+int main() {
+	int runAmount, a,b,c,d;
+	cin>>runAmount;
+	while(runAmount--){
+	    cin>>a>>b>>c>>d;
+        giveToLoser(a,b,c);
+        giveToLoser(a,b,d);
+        if(a>=b){
+            cout<<"N"<<endl;
+        }else{
+            cout<<"S"<<endl;
+        }
+	}
+	return 0;
+}
+
+```
