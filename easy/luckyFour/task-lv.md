@@ -25,3 +25,30 @@ Izvades T līnijas. Katrā no šīm rindām ir jāietver cipara 4 atkārtojumu s
 | 6664 | 1 |
 | 40 | 1 |
 | 81 | 0 |
+
+## Kods
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i, num, rem, count=0;
+	cin >> i;
+
+    for(int j=0; j<i; j++){
+        cin >> num;
+        while ( num != 0 ){
+            rem=num%10;
+            num=num/10;
+            if(rem==4){
+                count++;
+            }
+	    }
+	    cout << count << endl;
+	    count=0;
+    }
+
+	return 0;
+}
+
+```
