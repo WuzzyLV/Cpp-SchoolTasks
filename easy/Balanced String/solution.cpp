@@ -16,6 +16,7 @@ public:
         if (count == 0) {
             balanced++;
         }
+        
     }
     return balanced; 
     }

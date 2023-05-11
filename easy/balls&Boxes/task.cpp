@@ -16,5 +16,7 @@ int main() {
             cout<<"No"<<endl;
         }
 	}
+
+    main
 	return 0;
 }
