@@ -11,5 +11,8 @@ Izvaddatu vienīgajā rindā jāizvada vārds IR, ja n ir Armstronga skaitlis va
 
 
 ## 1. paraugs:
-| Ievade | Izvade |
-| 371    | IR     |
+| Ievade | Izvade | 
+|--------|-------:|
+| dog    | 30lb   | 
+| dog    | 85lb   | 
+| cat    | 18lb   | 
