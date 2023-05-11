@@ -1,5 +1,10 @@
 # 26. Noņemiet dublikātus no sakārtotā masīva
-
+## Rezultats: 
+```Runtime 9 ms
+Labāks par 81.9%
+RAM 18.4 MB
+Labāks par 76.33%
+```
 Ņemot vērā veselu skaitļu masīva numurus, kas sakārtoti nesamazināmā secībā, noņemiet dublikātus tā, lai katrs unikālais elements tiktu parādīts tikai vienu reizi. Elementu relatīvajai secībai jābūt tādai pašai. Pēc tam atgrieziet unikālo elementu skaitu skaitļos.
 
 Apsveriet, cik unikālo skaitļu elementu skaits ir k, lai tiktu pieņemts, jums ir jāveic šādas darbības:
