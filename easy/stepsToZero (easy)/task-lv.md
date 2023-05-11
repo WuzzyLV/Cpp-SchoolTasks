@@ -28,15 +28,33 @@ Ievade: num = 123
 Izvade: 12
  
 
-# # # ierobežojumi:
+# # # Ierobežojumi:
 0 < = num < = 106
 
-# rezultāts
-Izpildlaiks:
-0 ms
-Sitieni:
-100%
-Atmiņa:
-6 MB
-Sitieni:
-62.7%
+# Rezultāts
+    Izpildlaiks: 0 ms Labāks par: 100%
+    Atmiņa: 6 MB Labāks par: 62.7%
+
+## Kods
+```cpp
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+class Solution {
+public:
+    int numberOfSteps(int num) {
+        int i=0;
+        while(num!=0){
+            if(num%2==0){
+                num/=2;
+            } else{
+                num--;
+            }
+            i++;
+        }
+        return i;
+    }
+};
+```

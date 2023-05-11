@@ -28,3 +28,13 @@ Izvade: ["h", "a", "n", "n", "a", "H"]
 ## Ierobežojumi:
 - 1 <= s.garums <= 10^5
 - s[i] ir drukājama ASCII rakstzīme.
+
+## Kods
+```cpp
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+       reverse(s.begin(), s.end());
+    }
+};
+```

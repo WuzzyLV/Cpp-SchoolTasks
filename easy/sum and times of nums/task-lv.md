@@ -3,10 +3,8 @@
 
 ## Rezultāts
 ```
-Izpildes laiks 3 ms
-Pārspēj 38,26%
-Atmiņa 5,9 MB
-Pārspēj 92,93%
+Izpildes laiks 3 ms Pārspēj 38,26%
+Atmiņa 5,9 MB Pārspēj 92,93%
 ```
 Dots vesels skaitlis n, atgriež starpību starp tā ciparu reizinājumu un tā ciparu summu.
  

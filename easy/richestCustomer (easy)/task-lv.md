@@ -25,3 +25,29 @@ Klienta bagātība ir naudas summa, kas viņam ir visos bankas kontos. Bagātāk
 ## 3. piemērs:
     Ievade: konti = [[2,8,7],[7,1,3],[1,9,5]]
     Rezultāts: 17
+
+## Kods
+```cpp
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        int max=0, sum;
+        int m =accounts.size(); int n=accounts[0].size();
+        for(int i =0; i<m; i++){
+            sum=0;
+            for(int j = 0; j<n; j++){
+                sum+=accounts[i][j];
+            }
+            if(sum>max){
+                max=sum;
+            }
+        }
+        return max;
+    }
+};
+```
