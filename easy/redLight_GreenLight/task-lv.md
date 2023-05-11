@@ -51,3 +51,27 @@ Ievade | Izvade
 - 2. pārbaudes gadījums: Gi-Hun un Ali augums ir 8. Lai Ali būtu redzams Gi-Hun, ir jānošauj pirmajai personai (ar augumu 9). Tādējādi minimālais spēlētāju skaits, kuriem jāiegūst sitiens, ir 1.
 
 - 3. pārbaudes gadījums. Nevienu nevajag nošaut, jo visi ir īsāki par Gi-Hun un Ali.
+
+## Kods
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	int runAmount, aliHeight, n, shotCount, currHeight;
+	cin>>runAmount;
+	while(runAmount--){
+        shotCount=0;
+	    cin>>n>>aliHeight;
+	    for(int i =0;i<n;i++){
+            cin>>currHeight;
+	        if(currHeight >aliHeight){
+                shotCount++;
+            }
+	    }
+        cout<<shotCount<<endl;
+	}
+	return 0;
+}
+
+```
