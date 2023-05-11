@@ -22,3 +22,19 @@ Izvaddati satur a rindas un tajās atrodas pēc kārtas visi veselie skaitļi no
 -| 1
 -| 2
 -| 3
+
+## Kods
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int max;
+    cin>>max;
+    for (int i = 1; i <= max; i++)
+    {
+        cout<<i <<endl;
+    }
+}
+```

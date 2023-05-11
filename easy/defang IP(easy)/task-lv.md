@@ -22,4 +22,25 @@ Norādītā "adrese" ir derīga IPv4 adrese.
 ``` Izpildlaiks 0 ms;
 Pārspēj 100%;
 Atmiņa 6 MB;
-Pārspēj 28
+Pārspēj 28%
+```
+## Kods
+```cpp
+#include <vector>
+#include <iostream>
+
+using namespace std;
+class Solution {
+public:
+    string defangIPaddr(string address) {
+        for(int i =0;i<address.length();i++){
+            if(address[i]=='.'){
+                address.replace(i, 1, "[.]");
+                i++;
+            }
+        }
+        return address;
+    }
+};
+```
+

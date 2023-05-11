@@ -26,3 +26,27 @@ Ievade|Izvade
 ## Paskaidrojums:
 - 1. pārbaudes gadījums: varat mainīt 12 uz 6, 4 un 3, un pēc tam tos mainīt uz 6+4+3=13.
 - 2. pārbaudes gadījums: ja mēģināsiet nomainīt 2. monētu uz 3 mazākām monētām, jūs iegūsit 1, 0 un 0, un vēlāk varēsiet iegūt ne vairāk kā 1 no tām. Labāk ir vienkārši nomainīt 2 monētu tieši pret 2.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+long stonks(long n) {
+    /*
+    Stop at 12< because then its not worth it
+    */
+    if(n>=12){
+        return stonks(n/2) + stonks(n/3)+ stonks( n/4);
+    } else{
+        return n;
+    }
+}
+
+int main() {
+	long x;
+    while(cin>>x){
+        cout<< stonks(x) << endl;
+    }
+	return 0;
+}
+```

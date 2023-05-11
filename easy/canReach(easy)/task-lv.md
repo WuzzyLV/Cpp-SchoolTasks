@@ -36,3 +36,23 @@ Jūs varat drukāt katru katras virknes rakstzīmi ar lielajiem vai mazajiem bur
 - 1. pārbaudes gadījums: Šeit K=1, viens no ceļiem, pa kuru var iet pirmā kursa students, ir aprakstīts šādi: (0,0) līdz (1,0) līdz (1,1) līdz (1,2). Tādējādi viņš var sasniegt hosteļa koordinātu pie (x,y)=(1,2) ar ierobežojumu K=1.
 - 2. pārbaudes gadījums: kā šeit K=2, var pierādīt, ka nav ceļa, lai pārvietotos no (0,0) uz (3,−5), tikai palielinot vai samazinot jebkuru koordinātu tieši par K=2.
 - 3. pārbaudes gadījums: šeit K=3, viens no ceļiem, ko var iet pirmā kursa students, ir aprakstīts šādi: (0,0) līdz (-3,0) līdz (-3, -3) līdz (-3) ,−6) līdz (−6,−6) līdz (−9,−6). Tādējādi viņš var sasniegt hosteļa koordinātu pie (x,y)=(−9,−6) ar ierobežojumu K=3.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	int runAmount, k, x,y;
+	cin>>runAmount;
+	while(runAmount--){
+	    cin>>x>>y>>k;
+	    if(x%k==0 && y%k==0){
+	        cout<<"YES" <<endl;
+	        continue;
+	    }
+	    cout<<"NO"<<endl;
+	}
+	return 0;
+}
+
+```

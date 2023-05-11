@@ -41,3 +41,36 @@ Katram testa gadījumam izdrukājiet vienu rindiņu. Ja šefpavārs nevar nopirk
 - 1. gadījuma piemērs: pirmais planšetdators (ar ekrāna laukumu 3 ⋅ 4 = 12 $) ir labākais risinājums šefpavāram, jo ​​šefpavārs nevar atļauties otro, bet trešajam ir mazāks ekrāns.
 - 2. gadījuma piemērs: šefpavāra budžets ir 6 $, taču visiem planšetdatoriem ir augstākas cenas, tāpēc šefpavārs nevar iegādāties nevienu planšetdatoru.
 - 3. gadījuma piemērs: vienīgā planšetdatora cena ir precīzi vienāda ar šefpavāra budžetu, tāpēc viņš to var iegādāties.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	int runTimes, tabletAmount, budget, bestScreen;
+	cin>>runTimes;
+	int currW, currH, currScreen, currPrice;
+	while(runTimes--){
+	    bestScreen=0;
+	    cin>> tabletAmount >> budget;
+	    for(int i= 0;i<tabletAmount; i++){
+            cin>>currW>>currH>>currPrice;
+            if(currPrice>budget){
+                continue;
+            }
+            currScreen=currH*currW;
+            if(currScreen>bestScreen){
+                bestScreen=currScreen;
+            }
+	    }
+	    if(bestScreen==0){
+	        cout<<"no tablet" <<endl;
+	    }else{
+	        cout<<bestScreen << endl;
+	    }
+	}
+	
+	return 0;
+}
+
+```

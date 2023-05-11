@@ -43,3 +43,20 @@ Rezultāts: 701
 - 1 <= kolonnasTitle.length <= 7
 - columnTitle sastāv tikai no lielajiem angļu burtiem.
 - kolonnas nosaukums ir diapazonā ["A", "FXSHRXW"].
+
+
+## Kods
+```cpp
+class Solution {
+public:
+    int titleToNumber(string columnTitle) {
+        int result = 0;
+        for(int i =0; i<columnTitle.size(); i++)
+        {
+            int d = columnTitle[i] - 'A' + 1;
+            result = result * 26 + d;
+        }
+        return result;
+    }
+};
+```

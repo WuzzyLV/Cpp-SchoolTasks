@@ -35,3 +35,30 @@ Ievade|Izvade
 - 3. pārbaudes gadījums: nav iespējams sadalīt 2 bumbiņas 2 kastēs tā, lai divās kastēs nebūtu vienāds skaits bumbiņu.
 
 - 4. pārbaudes gadījums: mēs varam sadalīt 1 bumbiņu 1 kastē.
+
+## Kods
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int runAmount, balls, boxes, boxSum;
+    cin>>runAmount;
+	while(runAmount--){
+        boxSum=0;
+	    cin>>balls>>boxes;
+        for(int i=1; i<=boxes; i++){
+            boxSum+=i;
+        }
+        if(balls>=boxSum){
+            cout<<"Yes"<<endl;
+        }else{
+            cout<<"No"<<endl;
+        }
+	}
+
+    main
+	return 0;
+}
+
+```
