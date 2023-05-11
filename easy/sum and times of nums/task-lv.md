@@ -32,3 +32,22 @@ Rezultāts = 32 - 11 = 21
 
 ### Ierobežojumi:
 - 1 <= n <= 10^5
+
+## Kods
+```cpp
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+        int digit,times = 1,sum=0;
+        while(n!=0)
+        {
+            digit = n % 10;
+            sum += digit;
+            times *= digit;
+            n = n/10;
+        }
+        int res = times - sum;
+        return res;   
+    }
+};
+```
