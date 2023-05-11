@@ -36,3 +36,29 @@ Jūs varat atgriezt atbildi jebkurā secībā.
     11,1 MB
     Beats:
     17,13%
+    
+ ## Kods 
+```cpp
+
+#include <vector>
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        map<int, int> hash;
+        int size=nums.size();
+        for (int i = 0; i < size; i++){
+            if (hash.find(nums[i])!=hash.end()){
+                return {hash[nums[i]], i};
+            }
+            hash.insert({ (target - nums[i]), i });
+        }
+        return nums;
+    }
+};
+
+
