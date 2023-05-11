@@ -25,15 +25,11 @@ Stdout | Stdin
 #include <iostream>
 #include <cmath>
 
-#include <chrono>
-
 using namespace std;
 int main(){
 
     int base;
     cin >> base;
-
-    auto start = std::chrono::high_resolution_clock::now();
 
     int size=0;
     int count=base;
@@ -55,10 +51,6 @@ int main(){
         cout<< "NAV" <<endl;
     }
 
-    auto end = std::chrono::high_resolution_clock::now();
- 
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
-    cout<< duration.count() << " ms" << endl;
     return 0;
 }
 ```
