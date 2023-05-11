@@ -1,4 +1,4 @@
 # Cpp-SchoolTasks
 School tasks for school
 
-## Task Count: 47
+## Task Count: 48
