@@ -30,7 +30,7 @@ Rezultāts: 21
 
 - -2^31 <= x <= 2^31 - 1
 
-##Kods 
+## Kods 
 ```cpp
 class Solution {
 public:
