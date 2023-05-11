@@ -32,3 +32,25 @@ Atgriež tekošo skaitļu summu.
     8,5 MB
     Beats
     44,64%
+    
+    
+## Kods
+```cpp
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {	
+        int count=0;
+        int size=nums.size();
+        for(int i=0;i<size;i++){
+            count=count+nums[i];
+            nums[i]=count;
+        }
+        
+    }
+};
+```
