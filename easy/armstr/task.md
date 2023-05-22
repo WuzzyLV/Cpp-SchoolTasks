@@ -1,3 +1,4 @@
+# Armstronga skaitlis
 ## Definīcija
 Naturālu n ciparu skaitli sauc par Armstronga skaitli, ja tas sakrīt ar savu ciparu n-to pakāpju summu.
 Uzrakstiet programmu, kas ievadītam skaitlim n nosaka, vai tas ir Armstronga skaitlis.
