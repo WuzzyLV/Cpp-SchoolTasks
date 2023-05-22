@@ -20,6 +20,14 @@ Stdout | Stdin
 -|-
 371 | IR
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 ## Kods
 ```cpp
 #include <iostream>
